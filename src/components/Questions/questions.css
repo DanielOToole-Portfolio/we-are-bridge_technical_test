@@ -1,0 +1,58 @@
+.questions-cont .nav .arrow {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15px;
+  width: 15px;
+}
+
+.questions-cont .nav.next .arrow {
+  background-image: url("../../images/icons/wArrow.svg");
+}
+
+.questions-cont .nav.prev .arrow {
+  background-image: url("../../images/icons/wArrow.svg");
+  transform: rotate(180deg);
+}
+
+.questions-cont h2 {
+  color: #db2f20;
+  padding: 0 65px;
+}
+
+.questions-cont input {
+  width: 120px;
+  padding: 10px;
+  border: transparent;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.qc .carousel-item {
+  transition: opacity 1s ease-in-out !important;
+}
+.qc li {
+  transition: opacity 1s ease !important;
+}
+
+.q-slide-nav {
+  position: absolute;
+  width: 100%;
+  margin-top: -145px;
+}
+
+.q-slide-nav .col-sm-12 {
+  z-index: 10;
+}
+
+.q-slide-nav .nav.prev {
+  float: left;
+}
+
+.q-slide-nav .nav.next {
+  float: right;
+}
+
+.questions-cont .carousel-item {
+  min-height: 165px;
+}

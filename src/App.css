@@ -2,37 +2,124 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-indicators {
+  visibility: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  background-color: #db2f20;
+  margin: 10px;
+  padding: 10px 12px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  transition: 0.3s all;
+  cursor: pointer;
+  width: max-content;
+}
+
+.nav span {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav.next span {
+  margin-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav.prev span {
+  margin-left: 15px;
+}
+
+.nav .arrow {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 32px;
+  width: 32px;
+}
+
+.nav.next .arrow {
+  background-image: url("./images/icons/arrow.svg");
+}
+
+.nav.prev .arrow {
+  background-image: url("./images/icons/backArrow.svg");
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.qNav {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.estimate-cont,
+.questions-cont,
+.report-cont,
+.success-cont {
+  margin-top: 15%;
+}
+
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url("./images/bg/bg.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.background::before {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100%;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100%;
+}
+
+h3 {
+  color: #db2f20;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.page-cont {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }

@@ -1,0 +1,134 @@
+.estimate-cont ~ .nav.next {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .estimate-cont ~ .nav.next {
+    position: absolute;
+    bottom: 5px;
+    right: 10%;
+    margin-top: 0;
+  }
+}
+
+.checkbox-cont {
+  background-color: white;
+  margin: 10px 0;
+  padding: 17px 5px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s all;
+  cursor: pointer;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox-cont {
+    margin: 10px;
+  }
+}
+
+.checkbox-cont.checked,
+.checkbox-cont:hover {
+  background-color: #5f259f;
+}
+
+.checkbox-cont.checked p,
+.checkbox-cont:hover p {
+  color: white;
+}
+
+.checkbox-cont.checked .price-cont .price,
+.checkbox-cont:hover .price-cont .price {
+  color: white;
+}
+
+.checkbox-cont.checked .tick,
+.checkbox-cont:hover .tick {
+  fill: white;
+  filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width: 992px) {
+  .checkbox-cont.col-lg-4.col-md-6,
+  .total-cont.col-lg-4.col-md-6 {
+    width: 31%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox-cont.col-md-6,
+  .total-cont.col-md-6 {
+    width: 47%;
+  }
+}
+
+.checkbox-cont .tick {
+  background-image: url("../../images/icons/tick.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 32px;
+  width: 32px;
+  filter: invert(22%) sepia(18%) saturate(6078%) hue-rotate(248deg)
+    brightness(97%) contrast(110%);
+}
+
+.checkbox-cont p {
+  margin-bottom: 0;
+  color: #5f259f;
+  font-weight: 500;
+}
+
+.checkbox-cont .price-cont {
+  display: flex;
+  flex-direction: column;
+}
+.checkbox-cont .price-cont .text {
+  font-size: 12px;
+  font-weight: bold;
+  color: #c7b3dd;
+}
+.checkbox-cont .price-cont .price {
+  color: #5f259f;
+  letter-spacing: 0px;
+}
+
+.checkbox-input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.total-cont {
+  margin-top: 30px;
+}
+
+.total {
+  background-color: white;
+  padding: 17px 30px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total .text {
+  color: #5f259f;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.total .total-price {
+  color: #db2f20;
+  font-size: 28px;
+}
